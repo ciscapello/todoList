@@ -1,10 +1,18 @@
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
-import {Text, View} from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
+import { ScreensStackParams } from '../../navigation';
+import { globalStyles } from '../../styles';
+
+export type TodoProps = NativeStackScreenProps<
+  ScreensStackParams,
+  'AddTodoScreen'
+>;
 
 export default function AddTodoScreen() {
   return (
-    <View>
+    <SafeAreaView style={globalStyles.droidSafeArea}>
       <Text>asdasa</Text>
-    </View>
+    </SafeAreaView>
   );
 }
