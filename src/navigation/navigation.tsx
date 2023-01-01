@@ -1,11 +1,12 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Homescreen from '../screens/homeScreen/homescreen';
-import AddTodoScreen from '../screens/addTodoScreen/addTodoScreen';
+import {
+  createNativeStackNavigator,
+  NativeStackNavigationProp,
+} from '@react-navigation/native-stack';
+import { Homescreen, AddTodoScreen } from '../screens';
 import { Back } from '../shared/assets/svgs';
 import { StyleSheet, TouchableOpacity } from 'react-native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 export type ScreensStackParams = {
   Homescreen: undefined;

@@ -26,7 +26,6 @@ export default function AddTodoScreen() {
   const onSubmit: SubmitHandler<FormValues> = data => {
     if (data.title.trim()) {
       const value = { ...data, id: Date.now(), checked: false };
-      console.log(value);
       dispatch(createTodo(value));
       reset();
     }

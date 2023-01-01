@@ -18,9 +18,7 @@ export const todosSlice = createSlice({
     },
     checkTodo: (state, action) => {
       const { id, value } = action.payload;
-      console.log('payload', action.payload);
       const index = state.todos.findIndex(elem => elem.id === id);
-      console.log(index);
       state.todos[index].checked = value;
     },
     removeTodo: (state, action) => {
